@@ -1,4 +1,4 @@
-import { render, Component } from './toy-react';
+import { render, Component, createElement } from './toy-react';
 
 class Square extends Component {
   constructor(props) {
@@ -120,6 +120,9 @@ class Game extends Component {
 }
 
 render(<Game />, document.getElementById('root'));
+// let game = <Game />;
+
+// console.log(game.vdom)
 
 function calculateWinner(squares) {
   const lines = [
